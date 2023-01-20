@@ -41,10 +41,7 @@ public class Exercise1 {
                 .filter(user -> StreamSources.intNumbersStream().anyMatch(id -> id == user.getId()))
                 .forEach(System.out::println);
 
-//        StreamSources.intNumbersStream()
-//                .flatMap(id -> StreamSources.userStream().filter(user -> user.getId() == id))
-//                .map(user -> user.getFirstName())
-//                .forEach(userName -> System.out.println(userName));
+
     }
 
 }
